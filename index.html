@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience artisanal espresso, premium single-origin roasts, and exquisite pastries in a masterfully crafted architectural space.">
+    <title>L'AURA | Premium Artisanal Café & Espresso Bar</title>
+    
+    <!-- Design System Typography & Iconography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Accessible Global Navigation Gateway -->
+    <header id="globalHeader">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" aria-label="L'AURA Home">L'AURA<span>.</span></a>
+            
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="primaryNav" class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#menu" class="nav-link">The Menu</a>
+                <a href="#gallery" class="nav-link">Ambiance</a>
+                <a href="#reserve" class="nav-link nav-cta">Reserve a Table</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Experience -->
+        <section id="home" class="hero-section" aria-label="Welcome">
+            <div class="hero-bg-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-tag animate-up">Crafted Espresso & Slow Bar</span>
+                <h1 class="hero-title animate-up">A Sanctuary for the <span>Senses.</span></h1>
+                <p class="hero-desc animate-up">Where architectural intentionality meets the rigorous science of micro-lot single-origin coffee roasting.</p>
+                <div class="hero-actions animate-up">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#reserve" class="btn btn-secondary">Book Experience</a>
+                </div>
+            </div>
+            <a href="#story" class="scroll-indicator" aria-label="Scroll down to our story">
+                <span class="mouse-wheel"></span>
+            </a>
+        </section>
+
+        <!-- Section 2: About / Our Story -->
+        <section id="story" class="story-section" aria-label="Our Story">
+            <div class="container story-grid">
+                <div class="story-content reveal-on-scroll">
+                    <span class="section-tag">The Philosophy</span>
+                    <h2 class="section-title">Honoring the Bean, Mastering the Craft.</h2>
+                    <p class="section-desc">We view the coffee bean not as a simple morning utility, but as a living record of soil chemistry, high-altitude climate conditions, and generational farming traditions.</p>
+                    <p class="section-desc">Every batch of single-origin beans entering our roasting lab undergoes rigorous profiling, ensuring optimal thermodynamic control during roasting. The result is an uncompromised, pristine extraction that respects the natural structural complexity of the harvest.</p>
+                    <div class="story-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01 /</span>
+                            <div>
+                                <h3>Direct-Trade Beans</h3>
+                                <p>Sourced ethically from independent micro-farms in Ethiopia, Colombia, and Sumatra.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02 /</span>
+                            <div>
+                                <h3>Precision Roasting</h3>
+                                <p>Custom thermodynamic profiles designed to maximize bright floral notes and rich dark undertones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image-wrapper reveal-on-scroll">
+                    <!-- Standard high-quality placeholder representing an editorial barista portrait -->
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800&auto=format&fit=crop" alt="Barista pulling a precision espresso shot with a modern chrome lever machine" class="parallax-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Curated Menu Showcase -->
+        <section id="menu" class="menu-section" aria-label="Curated Menu offerings">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Curated Selections</span>
+                    <h2 class="section-title">The Current Extraction Menu</h2>
+                </div>
+
+                <div class="menu-filter-bar">
+                    <button class="filter-btn active" data-category="espresso">Espresso Bar</button>
+                    <button class="filter-btn" data-category="slow">Slow Bar / Filter</button>
+                    <button class="filter-btn" data-category="pastry">Artisanal Provisions</button>
+                </div>
+
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Item 1 (Espresso Category) -->
+                    <div class="menu-card" data-category="espresso">
+                        <div class="menu-card-header">
+                            <h3>Cortado</h3>
+                            <span class="menu-price">$5.50</span>
+                        </div>
+                        <p class="menu-card-desc">Equal parts micro-foamed milk and our signature house espresso blend, balancing sweet caramel notes with crisp citrus acidity.</p>
+                    </div>
+
+                    <!-- Item 2 (Espresso Category) -->
+                    <div class="menu-card" data-category="espresso">
+                        <div class="menu-card-header">
+                            <h3>Affogato al Caffè</h3>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p class="menu-card-desc">A double shot of espresso poured hot over a single scoop of organic, house-churned Madagascar vanilla bean gelato.</p>
+                    </div>
+
+                    <!-- Item 3 (Slow Bar Category) -->
+                    <div class="menu-card" data-category="slow">
+                        <div class="menu-card-header">
+                            <h3>Geisha V60 Pour-Over</h3>
+                            <span class="menu-price">$9.50</span>
+                        </div>
+                        <p class="menu-card-desc">Rare Ethiopian Geisha beans processed via clean washing. Reveals complex, elegant notes of jasmine, bergamot, and sweet white peach.</p>
+                    </div>
+
+                    <!-- Item 4 (Slow Bar Category) -->
+                    <div class="menu-card" data-category="slow">
+                        <div class="menu-card-header">
+                            <h3>24-Hour Kyoto Cold Drip</h3>
+                            <span class="menu-price">$8.00</span>
+                        </div>
+                        <p class="menu-card-desc">Slowly extracted drop-by-drop through custom ice water glass towers. Exceptionally smooth body with a clean, low-acid dark chocolate finish.</p>
+                    </div>
+
+                    <!-- Item 5 (Pastry Category) -->
+                    <div class="menu-card" data-category="pastry">
+                        <div class="menu-card-header">
+                            <h3>Pistachio Rose Croissant</h3>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p class="menu-card-desc">Three-day laminated French butter pastry, loaded with rich house pistachio frangipane and drizzled with organic rosewater glaze.</p>
+                    </div>
+
+                    <!-- Item 6 (Pastry Category) -->
+                    <div class="menu-card" data-category="pastry">
+                        <div class="menu-card-header">
+                            <h3>Yuzu Matcha Tart</h3>
+                            <span class="menu-price">$7.50</span>
+                        </div>
+                        <p class="menu-card-desc">Crisp, shortbread pastry shell filled with vibrant Uji matcha ganache and a sharp, refreshing layer of Japanese yuzu curd.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Architectural Ambiance Gallery -->
+        <section id="gallery" class="gallery-section" aria-label="Café Gallery and Ambiance">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Visual Context</span>
+                    <h2 class="section-title">The Space & Product Gallery</h2>
+                </div>
+                <div class="gallery-masonry">
+                    <div class="gallery-item item-wide reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop" alt="Minimalist interior of L'AURA café showing concrete counter and clean wood stools">
+                        <div class="gallery-overlay"><span>Main Espresso Bar Counter</span></div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" alt="Pouring hot water over a ceramic V60 filter dripper">
+                        <div class="gallery-overlay"><span>Precision Extraction Lab</span></div>
+                    </div>
+                    <div class="gallery-item reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Hot freshly brewed coffee in a minimalist ceramic cup on a walnut table">
+                        <div class="gallery-overlay"><span>Signature Single-Origin Cup</span></div>
+                    </div>
+                    <div class="gallery-item item-tall reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?q=80&w=600&auto=format&fit=crop" alt="Detail shot of iced cold brew being combined with layered cream">
+                        <div class="gallery-overlay"><span>Kyoto Drip Cold Extraction</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Reservations / Conversion Portal -->
+        <section id="reserve" class="reserve-section" aria-label="Table Reservations Matrix">
+            <div class="container reserve-grid">
+                <div class="reserve-info reveal-on-scroll">
+                    <span class="section-tag">Secure an Experience</span>
+                    <h2 class="section-title">Slow Bar Table Reservations</h2>
+                    <p class="section-desc">To preserve the quiet, intentional atmosphere of our space, we offer curated table reservations for our weekend slow bar tasting menus and private roasting sessions.</p>
+                    
+                    <div class="contact-info-block">
+                        <div class="info-row">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                            <div>
+                                <h4>Location Mapping</h4>
+                                <p>482 Espresso Terminal Highway, Suite 10, Metro District</p>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                            <div>
+                                <h4>Operating Schedules</h4>
+                                <p>Mon - Fri: 07:00 AM - 06:00 PM<br>Sat - Sun: 08:00 AM - 08:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protected Secure Input Form Layout Framework -->
+                <div class="reserve-form-container reveal-on-scroll">
+                    <form id="reservationForm" class="secure-form" autocomplete="on" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName" class="form-label">Full Name</label>
+                                <input type="text" id="clientName" name="name" class="form-control" placeholder="E.g., Jane Doe" autocomplete="name" required>
+                                <span class="error-msg" id="nameError" role="alert">Name entry is required</span>
+                            </div>
+                        </div>
+                        <div class="form-row split">
+                            <div class="form-group">
+                                <label for="clientEmail" class="form-label">Corporate Email</label>
+                                <input type="email" id="clientEmail" name="email" class="form-control" placeholder="jane@company.com" autocomplete="email" required>
+                                <span class="error-msg" id="emailError" role="alert">Provide a valid email address</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone" class="form-label">Telecom Routing (Phone)</label>
+                                <input type="tel" id="clientPhone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" autocomplete="tel" required>
+                                <span class="error-msg" id="phoneError" role="alert">Valid contact number required</span>
+                            </div>
+                        </div>
+                        <div class="form-row split">
+                            <div class="form-group">
+                                <label for="reserveDate" class="form-label">Desired Date</label>
+                                <input type="date" id="reserveDate" name="date" class="form-control" required>
+                                <span class="error-msg" id="dateError" role="alert">Select a valid forward date</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="guestCount" class="form-label">Guest Count</label>
+                                <select id="guestCount" name="guests" class="form-control" required>
+                                    <option value="" disabled selected>Select seats</option>
+                                    <option value="1">1 Attendee</option>
+                                    <option value="2">2 Attendees</option>
+                                    <option value="4">4 Attendees (Max)</option>
+                                </select>
+                                <span class="error-msg" id="guestError" role="alert">Specify seat size parameters</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Transmit Reservation Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Application Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo">L'AURA<span>.</span></a>
+                <p>Architectural space design, scientific roasting protocols, and sensory excellence since 2024.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Discovery Nodes</h4>
+                <a href="#home">Home Base</a>
+                <a href="#story">Our History</a>
+                <a href="#menu">Current Offerings</a>
+                <a href="#reserve">Secure Tables</a>
+            </div>
+            <div class="footer-socials">
+                <h4>Digital Connectivity</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Threads"><i class="fa-brands fa-threads"></i></a>
+                    <a href="#" aria-label="Find us on Google Maps"><i class="fa-solid fa-map"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 L'AURA Architecture Lab. All rights globally secured under standard HTTPS matrix protocols.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
